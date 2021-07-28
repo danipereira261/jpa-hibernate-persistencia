@@ -21,7 +21,7 @@ public class CategoriaDao {
     }
 
     public void remover(Categoria categoria) {
-    	categoria = em.merge(categoria);
+        categoria = em.merge(categoria);
         this.em.remove(categoria);
     }
 }
